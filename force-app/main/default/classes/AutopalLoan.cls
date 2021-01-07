@@ -124,6 +124,7 @@ global class AutopalLoan {
         public String secondaryPhone {get;set;}
         public Address primaryAddress {get;set;}
         public Address mailAddress {get;set;}
+        public String userType {get;set;}
     }
     
     public class Address{
@@ -186,5 +187,25 @@ global class AutopalLoan {
     public class Payment{
         public String id {get;set;}
         public String paymentid {get;set;}
+        public Decimal amount {get;set;}
+        public String method {get;set;}
+        public String date_z {get;set;}
+        public String type_z {get;set;}
+        public String extra {get;set;}
+        public String info {get;set;}
+    }
+    
+    public class CustomField{
+        public String title {get;set;}
+        public String type_z {get;set;}
+        public String value {get;set;}
+    }
+    
+    public class Charge{
+        public String info {get;set;}
+        public String id {get;set;}
+        public Decimal amount {get;set;}
+        public String date_z {get;set;}
+        public String type_z {get;set;}
     }
 }
